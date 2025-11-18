@@ -4,6 +4,14 @@ import java.util.*;
 
 public class EmployeeManager {
     public static void main(String[] args) {
+
+        // ✔ FIX for Task #2: Check number of arguments
+        if (args.length != 1) {
+            System.out.println("Error: Wrong number of arguments.");
+            System.out.println("Usage: java EmployeeManager <option>");
+            return;   // Stop program early
+        }
+
         // Check arguments
         if (args[0].equals("l")) {
             System.out.println("Loading data ...");
